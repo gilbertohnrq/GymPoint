@@ -12,6 +12,14 @@ GoStack
 
 #### **Desenvolver um app gerenciador de academia utilizando [Express Framework](https://expressjs.com/pt-br/) and Node.JS**
 
+---
+
+- O objetivo deste desafio é criar a primeira parte do backend da API para sistemas de gerenciamento de academia o qual pode salvar, buscar, autenticar serviços e editar os estudantes matriculados na academia
+
+- Este desafio utiliza conceitos de Node.JS, o que inclui Route Params, CRUD, Sequelize, Jwt authentication, Banco de dados Postgres, Hashpass, Yup e outras features descritas abaixo na sessão de procedures.
+
+---
+
 ## **About the challenge:**
 
 #### **Develop a gym management app using [Express Framework](https://expressjs.com/pt-br/) and Node.JS**
@@ -20,7 +28,7 @@ GoStack
 
 - The objective of this challenge is to create the first part of the backend API for gym systems which can save, search, control authentication services and edit students matriculated in the gym.
 
-- This challenge uses concepts of Node.JS, that includes Route Params, CRUD, sequelize, jwt, postgres database, hashpass, Yup and other features describes right below in procedures session.
+- This challenge uses concepts of Node.JS, that includes Route Params, CRUD, Sequelize, Jwt authentication, Postgres Database, Hashpass, Yup and other features describes right below in procedures session.
 
 ---
 
