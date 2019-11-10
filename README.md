@@ -1,112 +1,58 @@
-<h1 align="center">
-  <img alt="Gympoint" title="Gympoint" src=".github/logo.png" width="200px" />
-</h1>
-## :rocket: Sobre o desafio
+# Rocketseat: GoStack - Bootcamp 9.0
 
-Durante esse desafio vamos aprimorar a aplicação Gympoint que demos início no desafio anterior implementando funcionalidades que aprendemos durante as aulas até agora.
+<p align="center">
+  <img src="https://github.com/Rocketseat/bootcamp-gostack-desafio-02/blob/master/.github/logo.png?raw=true">
 
-### Funcionalidades do administrador
+GoStack
+[Challenge 02: Gympoint - Iniciando a aplicação](#)
 
-Abaixo estão descritas as funcionalidades que você deve adicionar em sua aplicação para administradores.
+</p>
 
-#### 1. Gestão de planos
+## **Sobre o desafio:**
 
-Permita que o usuário possa cadastrar planos para matrícula de alunos, o plano deve possuir os seguintes campos:
+#### **Desenvolver um app gerenciador de academia utilizando [Express Framework](https://expressjs.com/pt-br/) and Node.JS**
 
-- title (nome do plano);
-- duration (duração em número de meses);
-- price (preço mensal do plano);
-- created_at;
-- updated_at;
+## **About the challenge:**
 
-Crie alguns planos como por exemplo:
+#### **Develop a gym management app using [Express Framework](https://expressjs.com/pt-br/) and Node.JS**
 
-- `Start`: Plano de 1 mês por R\$129;
-- `Gold`: Plano de 3 meses por R\$109/mês;
-- `Diamond`: Plano de 6 meses por R\$89/mês;
+---
 
-Crie rotas para listagem/cadastro/atualização/remoção de planos;
+- The objective of this challenge is to create the first part of the backend API for gym systems which can save, search, control authentication services and edit students matriculated in the gym.
 
-Obs.: Essa funcionalidade é para administradores autenticados na aplicação.
+- This challenge uses concepts of Node.JS, that includes Route Params, CRUD, sequelize, jwt, postgres database, hashpass, Yup and other features describes right below in procedures session.
 
-#### 2. Gestão de matrículas
+---
 
-Apesar do aluno estar cadastrado na plataforma, isso não significa que o mesmo tem uma matrícula ativa e que pode acessar a academia.
+# Procedures
 
-Nessa funcionalidade criaremos um cadastro de matrículas por aluno, a matrícula possui os campos:
+## Structure and Settings
 
-- student_id (referência ao aluno);
-- plan_id (referência ao plano);
-- start_date (data de início da matrícula);
-- end_date (date de término da matrícula);
-- price (preço total calculado na data da matrícula);
-- created_at;
-- updated_at;
+- [x] Install and config Express
+- [x] Install and config Nodemon and Sucrase (-D)
+- [x] Config ESLint and Prettier
+- [x] Create Structure for the app (MVC)
+- [] Install and Config Sequelize (create database)
 
-A **data de início** da matrícula deve ser escolhida pelo usuário.
+## User
 
-A **data de término** e **preço** da matrícula deve ser calculada com base no plano selecionado, por exemplo:
+- [] Create User Migration
+- [] Create User Model
+- [] Create Loader for the Models
+- [] Create admin seed
+- [] Create User Controller
+- [] Hash pass
+- [] Jwt sessions
+- [] Middlewares
+- [] Update user
+- [] Validation
 
-Data de início informada: `23/05/2019`
-Plano selecionado: `Gold (3 meses)`
-Data de término calculada: `23/08/2019 (3 meses depois do início)`
-Preço calculado: `R$327`
+## Students
 
-Quando um aluno **realiza uma matrícula** ele recebe um e-mail com detalhes da sua inscrição na academia como plano, data de término, valor e uma mensagem de boas-vidas.
-
-Crie rotas para listagem/cadastro/atualização/remocação de matrículas;
-
-Obs.: Essa funcionalidade é para administradores autenticados na aplicação.
-
-### Funcionalidades do aluno
-
-Abaixo estão descritas as funcionalidades que você deve adicionar em sua aplicação para alunos.
-
-#### 1. Checkins
-
-Quando o aluno chega na academia o mesmo realiza um check-in apenas informando seu ID de cadastro (ID do banco de dados);
-
-Esse check-in serve para monitorar quantas vezes o usuário frequentou a academia na semana.
-
-A tabela de `checkins` possui os campos:
-
-- student_id (referência ao aluno);
-- created_at;
-- updated_at;
-
-O usuário só pode fazer **5 checkins** dentro de um período de 7 dias corridos.
-
-Exemplo de requisição: `POST https://gympoint.com/students/3/checkins`
-
-Crie uma rota para listagem de todos checkins realizados por um usuário com base em seu ID de cadastro;
-
-Exemplo de requisição: `GET https://gympoint.com/students/3/checkins`
-
-#### 2. Pedidos de auxílio
-
-O aluno pode criar pedidos de auxílio para a academia em relação a algum exercício, alimentação ou instrução qualquer;
-
-A tabela `help_orders` deve conter os seguintes campos:
-
-- student_id (referência ao aluno);
-- question (pergunta do aluno em texto);
-- answer (resposta da academia em texto);
-- answer_at (data da resposta da academia);
-- created_at;
-- updated_at;
-
-Crie uma rota para a academia listar todos pedidos de auxílio sem resposta;
-
-Crie uma rota para o aluno cadastrar pedidos de auxílio apenas informando seu ID de cadastro (ID do banco de dados);
-
-Exemplo de requisição: `POST https://gympoint.com/students/3/help-orders`
-
-Crie uma rota para listar todos pedidos de auxílio de um usuário com base em seu ID de cadastro;
-
-Exemplo de requisição: `GET https://gympoint.com/students/3/help-orders`
-
-Crie uma rota para a academia responder um pedido de auxílio:
-
-Exemplo de requisição: `POST https://gympoint.com/help-orders/1/answer`
-
-Quando um pedido de auxílio for respondido, o aluno deve receber um e-mail da plataforma com a pergunta e resposta da academia;
+- [] Create students Migration
+- [] Create student Model
+- [] Add student Model to Loader
+- [] Create student Controller and store method
+- [] Validate students
+- [] Create update method
+- [] Middleware to create a route validation for admin which can create and update students info
