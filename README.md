@@ -10,7 +10,7 @@ GoStack
 
 ## **Sobre o desafio:**
 
-#### **Desenvolver um app gerenciador de academia utilizando [Express Framework](https://expressjs.com/pt-br/) and Node.JS**
+#### **Desenvolver um app gerenciador de academia utilizando [Express Framework](https://expressjs.com/pt-br/) and [Node.JS](https://nodejs.org/en/)**
 
 ---
 
