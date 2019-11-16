@@ -45,7 +45,7 @@ GoStack
 ## User
 
 - [x] Create User Migration
-- [] Create User Model
+- [x] Create User Model
 - [] Create Loader for the Models
 - [x] Create admin seed
 - [] Create User Controller
