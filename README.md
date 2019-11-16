@@ -40,16 +40,16 @@ GoStack
 - [x] Install and config Nodemon and Sucrase (-D)
 - [x] Config ESLint and Prettier
 - [x] Create Structure for the app (MVC)
-- [] Install and Config Sequelize (create database)
+- [x] Install and Config Sequelize (create database)
 
 ## User
 
-- [] Create User Migration
+- [x] Create User Migration
 - [] Create User Model
 - [] Create Loader for the Models
-- [] Create admin seed
+- [x] Create admin seed
 - [] Create User Controller
-- [] Hash pass
+- [x] Hash pass
 - [] Jwt sessions
 - [] Middlewares
 - [] Update user
