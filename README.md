@@ -46,21 +46,21 @@ GoStack
 
 - [x] Create User Migration
 - [x] Create User Model
-- [] Create Loader for the Models
+- [x] Create Loader for the Models
 - [x] Create admin seed
-- [] Create User Controller
+- [x] Create User Controller
 - [x] Hash pass
-- [] Jwt sessions
-- [] Middlewares
-- [] Update user
-- [] Validation
+- [x] Jwt sessions
+- [x] Middlewares
+- [x] Update user
+- [x] Validation
 
 ## Students
 
-- [] Create students Migration
-- [] Create student Model
-- [] Add student Model to Loader
-- [] Create student Controller and store method
-- [] Validate students
-- [] Create update method
-- [] Middleware to create a route validation for admin which can create and update students info
+- [x] Create students Migration
+- [x] Create student Model
+- [x] Add student Model to Loader
+- [x] Create student Controller and store method
+- [x] Validate students
+- [x] Create update method
+- [x] Middleware to create a route validation for admin which can create and update students info
