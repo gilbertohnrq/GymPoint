@@ -1,4 +1,5 @@
 import express from 'express';
+
 import routes from './routes';
 
 import './database';
@@ -12,6 +13,7 @@ class App {
   }
 
   middlewares() {
+    // Para permitir a utilização da estrutura de dados JSON
     this.server.use(express.json());
   }
 
@@ -19,5 +21,5 @@ class App {
     this.server.use(routes);
   }
 }
-
+// Exportando o arquivo app a classe App o método server
 export default new App().server;
