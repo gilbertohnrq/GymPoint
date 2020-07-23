@@ -1,7 +1,5 @@
 # Rocketseat: GoStack - Bootcamp 9.0
 
-<p align="center">
-  <img src="https://github.com/Rocketseat/bootcamp-gostack-desafio-02/blob/master/.github/logo.png?raw=true">
 
 GoStack
 [Challenge 02: Gympoint - Iniciando a aplicação](#)
